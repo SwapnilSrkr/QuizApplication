@@ -53,5 +53,6 @@
     <dimen name="image_height">100dp</dimen>
     <dimen name="text_size_7">50sp</dimen>
     <dimen name="_20">20dp</dimen>
+    <dimen name="_30">30dp</dimen>
 
 </resources>
