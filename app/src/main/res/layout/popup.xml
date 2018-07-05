@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_350"
+    android:layout_height="@dimen/_400"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/custom_border">
+
+    <TextView
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_size_7"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview1"
+            android:layout_width="@dimen/_300"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            card_view:cardBackgroundColor="@color/main_color"
+            card_view:cardCornerRadius="@dimen/card_corner_2"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/card_content_padding_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/phy_card"
+                    android:layout_width="@dimen/box_width"
+                    android:layout_height="@dimen/box_height"
+                    card_view:cardBackgroundColor="@color/box_color_1"
+                    card_view:cardCornerRadius="@dimen/card_corner_2"
+                    card_view:cardElevation="@dimen/card_elevation"
+                    card_view:contentPadding="@dimen/card_content_padding"
+                    android:layout_marginTop="@dimen/margin_1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_100_width"
+                            android:layout_height="@dimen/icon_100_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/physics" />
+
+                        <TextView
+                            android:id="@+id/physics"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10"
+                            android:gravity="center"
+                            android:text="@string/physics"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_6"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/chem_card"
+                    android:layout_width="@dimen/box_width"
+                    android:layout_height="@dimen/box_height"
+                    android:layout_marginTop="@dimen/_16"
+                    card_view:cardBackgroundColor="@color/box_color_2"
+                    card_view:cardCornerRadius="@dimen/card_corner_2"
+                    card_view:cardElevation="@dimen/card_elevation"
+                    card_view:contentPadding="@dimen/card_content_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_100_width"
+                            android:layout_height="@dimen/icon_100_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/chemistry" />
+
+                        <TextView
+                            android:id="@+id/chemistry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10"
+                            android:gravity="center"
+                            android:text="@string/chemistry"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_6"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/bio_card"
+                    android:layout_width="@dimen/box_width"
+                    android:layout_height="@dimen/box_height"
+                    android:layout_marginTop="@dimen/_16"
+                    card_view:cardBackgroundColor="@color/box_color_3"
+                    card_view:cardCornerRadius="@dimen/card_corner_2"
+                    card_view:cardElevation="@dimen/card_elevation"
+                    card_view:contentPadding="@dimen/card_content_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/icon_100_width"
+                            android:layout_height="@dimen/icon_100_height"
+                            android:layout_gravity="center"
+                            android:src="@drawable/biology" />
+
+                        <TextView
+                            android:id="@+id/biology"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10"
+                            android:gravity="center"
+                            android:text="@string/biology"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_6"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/more_card"
+                    android:layout_width="@dimen/box_width"
+                    android:layout_height="@dimen/box_height"
+                    android:layout_marginTop="16dp"
+                    card_view:cardBackgroundColor="@color/box_color_4"
+                    card_view:cardCornerRadius="@dimen/card_corner_2"
+                    card_view:cardElevation="@dimen/card_elevation"
+                    card_view:contentPadding="@dimen/card_content_padding">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/extra"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10"
+                            android:gravity="center"
+                            android:text="@string/more_topics"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/text_size_6"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

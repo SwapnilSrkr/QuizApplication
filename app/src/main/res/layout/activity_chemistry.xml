@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_margin"
+                app:layout_constraintBottom_toTopOf="@id/card_view2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                card_view:cardBackgroundColor="@color/card_color_1"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/radiogroup1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question1">
+
+                        <RadioButton
+                            android:id="@+id/question1_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q1_o1"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question1_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q1_o2"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question1_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q1_o3"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question1_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q1_o4"
+                            android:textSize="@dimen/text_size_2"/>
+
+                    </RadioGroup>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view1"
+                card_view:cardBackgroundColor="@color/card_color_2"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q2"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/radiogroup2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question2">
+
+                        <RadioButton
+                            android:id="@+id/question2_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q2_o1"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question2_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q2_o2"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question2_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q2_o3"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question2_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q2_o4"
+                            android:textSize="@dimen/text_size_2"/>
+                    </RadioGroup>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view2"
+                card_view:cardBackgroundColor="@color/card_color_3"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q3"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/question3_choice1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/question3_choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:text="@string/chem_q3_o1"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question3" />
+
+                    <CheckBox
+                        android:id="@+id/question3_choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q3_o2"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question3_choice1" />
+
+                    <CheckBox
+                        android:id="@+id/question3_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q3_o3"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question3_choice2" />
+
+                    <CheckBox
+                        android:id="@+id/question3_choice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q3_o4"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question3_choice3" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view3"
+                card_view:cardBackgroundColor="@color/color_card_4"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q4"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/question4_answer"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/question4_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:inputType="text"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question4" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view4"
+                card_view:cardBackgroundColor="@color/color_card_5"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q5"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/question5_choice1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <CheckBox
+                        android:id="@+id/question5_choice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:text="@string/chem_q5_o1"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question5" />
+
+                    <CheckBox
+                        android:id="@+id/question5_choice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q5_o2"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question5_choice1" />
+
+                    <CheckBox
+                        android:id="@+id/question5_choice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q5_o3"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question5_choice2" />
+
+                    <CheckBox
+                        android:id="@+id/question5_choice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chem_q5_o4"
+                        android:textSize="@dimen/text_size_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question5_choice3" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view5"
+                card_view:cardBackgroundColor="@color/color_card_6"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="3"
+                        android:text="@string/chem_q6"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/question6_answer"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/question6_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:inputType="text"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question6" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view6"
+                card_view:cardBackgroundColor="@color/color_card_7"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q7"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/radiogroup7"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question7">
+
+                        <RadioButton
+                            android:id="@+id/question7_choice1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q7_o1"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question7_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q7_o2"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question7_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q7_o3"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question7_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q7_o4"
+                            android:textSize="@dimen/text_size_2"/>
+
+                    </RadioGroup>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view8"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view7"
+                card_view:cardBackgroundColor="@color/color_card_8"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="3"
+                        android:text="@string/chem_q8"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/question8_answer"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/question8_answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:inputType="text"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question8" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view9"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="@id/card_view10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view8"
+                card_view:cardBackgroundColor="@color/color_card_9"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q9"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/radiogroup9"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question9">
+
+                        <RadioButton
+                            android:id="@+id/question9_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q9_o1"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question9_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q9_o2"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question9_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q9_o3"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question9_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q9_o4"
+                            android:textSize="@dimen/text_size_2"/>
+                    </RadioGroup>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:layout_marginRight="@dimen/card_margin"
+                android:layout_marginTop="@dimen/card_spacing"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view9"
+                card_view:cardBackgroundColor="@color/color_card_10"
+                card_view:cardCornerRadius="@dimen/card_corner"
+                card_view:cardElevation="@dimen/card_elevation"
+                card_view:contentPadding="@dimen/card_content_padding">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/question10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="2"
+                        android:text="@string/chem_q10"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_1"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@id/radiogroup10"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_1"
+                        android:orientation="vertical"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/question10">
+
+                        <RadioButton
+                            android:id="@+id/question10_choice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q10_o1"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question10_choice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q10_o2"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question10_choice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q10_o3"
+                            android:textSize="@dimen/text_size_2"/>
+
+                        <RadioButton
+                            android:id="@+id/question10_choice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="@string/chem_q10_o4"
+                            android:textSize="@dimen/text_size_2"/>
+                    </RadioGroup>
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/content_floating" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/_230"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@drawable/ic_share"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="@dimen/margin_1"
+            app:pressedTranslationZ="@dimen/margin_3" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@drawable/ic_loop"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="@dimen/margin_1"
+            app:pressedTranslationZ="@dimen/margin_3" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/margin_4"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@drawable/ic_send"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="@dimen/margin_1"
+            app:pressedTranslationZ="@dimen/margin_3" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/colorAccent"
+            app:elevation="@dimen/margin_1"
+            app:pressedTranslationZ="@dimen/margin_3" />
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

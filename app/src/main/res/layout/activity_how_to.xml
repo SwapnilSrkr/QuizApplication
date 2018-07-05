@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/cardview1"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            card_view:cardBackgroundColor="@color/main_color"
+            card_view:cardCornerRadius="@dimen/card_coner_2"
+            card_view:cardElevation="@dimen/card_elevation"
+            card_view:contentPadding="@dimen/card_content_padding"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_6"
+                    android:text="@string/how_to"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_3"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_8"
+                        android:layout_height="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_9"
+                        android:layout_marginStart="@dimen/margin_9"
+                        android:src="@drawable/bullet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/choose_a_category"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_4"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_8"
+                        android:layout_height="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_9"
+                        android:layout_marginStart="@dimen/margin_9"
+                        android:src="@drawable/bullet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/each_category_contains_10_questions"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_4"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_8"
+                        android:layout_height="@dimen/margin_8"
+                        android:layout_marginLeft="@dimen/margin_9"
+                        android:layout_marginStart="@dimen/margin_9"
+                        android:src="@drawable/bullet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:text="@string/answer_the_questions"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_4"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/that_s_it"
+                    android:textSize="@dimen/text_size_6"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_40"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
