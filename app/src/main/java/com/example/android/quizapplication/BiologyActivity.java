@@ -25,7 +25,7 @@ public class BiologyActivity extends AppCompatActivity {
 
     String doBetter = "You can do better!" + System.getProperty("line.separator") + System.getProperty("line.separator") + "Try again?";
     String poor = "Brush up your knowledge, maybe?";
-    String congrats = "Well done!" + System.getProperty("line.separator") + "You are outstanding!";
+    String congrats = "Well done!" + System.getProperty("line.separator") + "You are awesome!";
     // Question 1
     RadioButton question1_choice1;
     RadioButton question1_choice2;
@@ -293,6 +293,7 @@ public class BiologyActivity extends AppCompatActivity {
                     question10_choice2.setChecked(false);
                     question10_choice3.setChecked(false);
                     question10_choice4.setChecked(false);
+                    final_score = 0;
                     Toast.makeText(BiologyActivity.this, "Answers reset", Toast.LENGTH_SHORT).show();
                 }
             }

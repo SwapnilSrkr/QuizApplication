@@ -289,6 +289,7 @@ public class PhysicsActivity extends AppCompatActivity {
                     question10_choice2.setChecked(false);
                     question10_choice3.setChecked(false);
                     question10_choice4.setChecked(false);
+                    final_score=0;
                     Toast.makeText(PhysicsActivity.this, "Options Reset", Toast.LENGTH_SHORT).show();
                 }
             }
