@@ -18,6 +18,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.PopupWindow;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -82,6 +83,37 @@ public class PhysicsActivity extends AppCompatActivity {
         fab1 = findViewById(R.id.fab1);
         fab2 = findViewById(R.id.fab2);
         fab3 = findViewById(R.id.fab3);
+        question1_choice1 = findViewById(R.id.question1_choice1);
+        question1_choice2 = findViewById(R.id.question1_choice2);
+        question1_choice3 = findViewById(R.id.question1_choice3);
+        question1_choice4 = findViewById(R.id.question1_choice4);
+        question2_choice1 = findViewById(R.id.question2_choice1);
+        question2_choice2 = findViewById(R.id.question2_choice2);
+        question2_choice3 = findViewById(R.id.question2_choice3);
+        question2_choice4 = findViewById(R.id.question2_choice4);
+        question3_choice1 = findViewById(R.id.question3_choice1);
+        question3_choice2 = findViewById(R.id.question3_choice2);
+        question3_choice3 = findViewById(R.id.question3_choice3);
+        question3_choice4 = findViewById(R.id.question3_choice4);
+        question4_answer = findViewById(R.id.question4_answer);
+        question5_choice1 = findViewById(R.id.question5_choice1);
+        question5_choice2 = findViewById(R.id.question5_choice2);
+        question5_choice3 = findViewById(R.id.question5_choice3);
+        question5_choice4 = findViewById(R.id.question5_choice4);
+        question6_answer = findViewById(R.id.question6_answer);
+        question7_choice1 = findViewById(R.id.question7_choice1);
+        question7_choice2 = findViewById(R.id.question7_choice2);
+        question7_choice3 = findViewById(R.id.question7_choice3);
+        question7_choice4 = findViewById(R.id.question7_choice4);
+        question8_answer = findViewById(R.id.question8_answer);
+        question9_choice1 = findViewById(R.id.question9_choice1);
+        question9_choice2 = findViewById(R.id.question9_choice2);
+        question9_choice3 = findViewById(R.id.question9_choice3);
+        question9_choice4 = findViewById(R.id.question9_choice4);
+        question10_choice1 = findViewById(R.id.question10_choice1);
+        question10_choice2 = findViewById(R.id.question10_choice2);
+        question10_choice3 = findViewById(R.id.question10_choice3);
+        question10_choice4 = findViewById(R.id.question10_choice4);
         ScrollView view = findViewById(R.id.scroll_view);
         view.setDescendantFocusability(ViewGroup.FOCUS_BEFORE_DESCENDANTS);
         view.setFocusable(true);
@@ -127,67 +159,53 @@ public class PhysicsActivity extends AppCompatActivity {
                 //------------------------------------------------------------------------------------------
                 // Question 1 - Correct Answer is #2
                 //------------------------------------------------------------------------------------------
-                question1_choice2 = findViewById(R.id.question1_choice2);
-                if (question1_choice2.isChecked())
-                    final_score++;
+                if (question1_choice2.isChecked()) final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 2 - Correct Answer is #1
                 //------------------------------------------------------------------------------------------
-                question2_choice2 = findViewById(R.id.question2_choice2);
                 if (question2_choice2.isChecked())
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 3 - Correct Answer is #1 and #2
                 //------------------------------------------------------------------------------------------
-                question3_choice1 = findViewById(R.id.question3_choice1);
-                question3_choice2 = findViewById(R.id.question3_choice2);
-                question3_choice3 = findViewById(R.id.question3_choice3);
-                question3_choice4 = findViewById(R.id.question3_choice4);
                 if (question3_choice1.isChecked() && question3_choice2.isChecked() && question3_choice3.isChecked())
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 4 - Correct Answer is Stephen Hawking
                 //------------------------------------------------------------------------------------------
-                question4_answer = findViewById(R.id.question4_answer);
                 if (question4_answer.getText().toString().toLowerCase().equals("stephen hawking"))
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 5 - Correct Answer is #2
                 //------------------------------------------------------------------------------------------
-                question5_choice2 = findViewById(R.id.question5_choice2);
                 if (question5_choice2.isChecked())
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 6 - Correct Answer is Scattering
                 //------------------------------------------------------------------------------------------
-                question6_answer = findViewById(R.id.question6_answer);
                 if (question6_answer.getText().toString().toLowerCase().equals("scattering"))
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 7 - Correct Answer is #3
                 //------------------------------------------------------------------------------------------
-                question7_choice3 = findViewById(R.id.question7_choice3);
                 if (question7_choice3.isChecked())
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 8 - Correct Answer is Sound Navigation and Ranging
                 //------------------------------------------------------------------------------------------
-                question8_answer = findViewById(R.id.question8_answer);
                 if (question8_answer.getText().toString().toLowerCase().equals("sound navigation and ranging"))
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 9 - Correct Answer is #3
                 //------------------------------------------------------------------------------------------
-                question9_choice3 = findViewById(R.id.question9_choice3);
                 if (question9_choice3.isChecked())
                     final_score++;
                 //------------------------------------------------------------------------------------------
                 // Question 10 - Correct Answer is #4
                 //------------------------------------------------------------------------------------------
-                question10_choice4 = (RadioButton) findViewById(R.id.question10_choice4);
                 if (question10_choice4.isChecked())
                     final_score++;
-                //We need to get the instance of the LayoutInflater, use the context of this activity
+                //Gets the instance of the LayoutInflater, uses the context of this activity
                 LayoutInflater inflater = (LayoutInflater) PhysicsActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 //Inflate the view from a predefined XML layout (no need for root id, using entire layout)
                 View layout = inflater.inflate(R.layout.popup, null);
@@ -225,70 +243,24 @@ public class PhysicsActivity extends AppCompatActivity {
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                question1_choice1 = findViewById(R.id.question1_choice1);
-                question1_choice2 = findViewById(R.id.question1_choice2);
-                question1_choice3 = findViewById(R.id.question1_choice3);
-                question1_choice4 = findViewById(R.id.question1_choice4);
-                question2_choice1 = findViewById(R.id.question2_choice1);
-                question2_choice2 = findViewById(R.id.question2_choice2);
-                question2_choice3 = findViewById(R.id.question2_choice3);
-                question2_choice4 = findViewById(R.id.question2_choice4);
-                question3_choice1 = findViewById(R.id.question3_choice1);
-                question3_choice2 = findViewById(R.id.question3_choice2);
-                question3_choice3 = findViewById(R.id.question3_choice3);
-                question3_choice4 = findViewById(R.id.question3_choice4);
-                question4_answer = findViewById(R.id.question4_answer);
-                question5_choice1 = findViewById(R.id.question5_choice1);
-                question5_choice2 = findViewById(R.id.question5_choice2);
-                question5_choice3 = findViewById(R.id.question5_choice3);
-                question5_choice4 = findViewById(R.id.question5_choice4);
-                question6_answer = findViewById(R.id.question6_answer);
-                question7_choice1 = findViewById(R.id.question7_choice1);
-                question7_choice2 = findViewById(R.id.question7_choice2);
-                question7_choice3 = findViewById(R.id.question7_choice3);
-                question7_choice4 = findViewById(R.id.question7_choice4);
-                question8_answer = findViewById(R.id.question8_answer);
-                question9_choice1 = findViewById(R.id.question9_choice1);
-                question9_choice2 = findViewById(R.id.question9_choice2);
-                question9_choice3 = findViewById(R.id.question9_choice3);
-                question9_choice4 = findViewById(R.id.question9_choice4);
-                question10_choice1 = findViewById(R.id.question10_choice1);
-                question10_choice2 = findViewById(R.id.question10_choice2);
-                question10_choice3 = findViewById(R.id.question10_choice3);
-                question10_choice4 = findViewById(R.id.question10_choice4);
-
                 if (question1_choice1.isChecked() || question1_choice2.isChecked() || question1_choice3.isChecked() || question1_choice4.isChecked() || question2_choice1.isChecked() || question2_choice2.isChecked() || question2_choice3.isChecked() || question2_choice4.isChecked() || question3_choice1.isChecked() || question3_choice2.isChecked() || question3_choice3.isChecked() || question3_choice4.isChecked() || !question4_answer.getText().toString().equals("") || question5_choice1.isChecked() || question5_choice2.isChecked() || question5_choice3.isChecked() || question5_choice4.isChecked() || !question6_answer.getText().toString().equals("") || question7_choice1.isChecked() || question7_choice2.isChecked() || question7_choice3.isChecked() || question7_choice4.isChecked() || !question8_answer.getText().toString().equals("") || question9_choice1.isChecked() || question9_choice2.isChecked() || question9_choice3.isChecked() || question9_choice4.isChecked() || question10_choice1.isChecked() || question10_choice2.isChecked() || question10_choice3.isChecked() || question10_choice4.isChecked()) {
-                    question1_choice1.setChecked(false);
-                    question1_choice2.setChecked(false);
-                    question1_choice3.setChecked(false);
-                    question1_choice4.setChecked(false);
-                    question2_choice1.setChecked(false);
-                    question2_choice2.setChecked(false);
-                    question2_choice3.setChecked(false);
-                    question2_choice4.setChecked(false);
-                    question3_choice1.setChecked(false);
-                    question3_choice2.setChecked(false);
-                    question3_choice3.setChecked(false);
-                    question3_choice4.setChecked(false);
+                    RadioGroup radioGroup1 = findViewById(R.id.radiogroup1);
+                    radioGroup1.clearCheck();
+                    RadioGroup radioGroup2 = findViewById(R.id.radiogroup2);
+                    radioGroup2.clearCheck();
                     question4_answer.setText(null);
                     question5_choice1.setChecked(false);
                     question5_choice2.setChecked(false);
                     question5_choice3.setChecked(false);
                     question5_choice4.setChecked(false);
                     question6_answer.setText(null);
-                    question7_choice1.setChecked(false);
-                    question7_choice2.setChecked(false);
-                    question7_choice3.setChecked(false);
-                    question7_choice4.setChecked(false);
+                    RadioGroup radioGroup7 = findViewById(R.id.radiogroup7);
+                    radioGroup7.clearCheck();
                     question8_answer.setText(null);
-                    question9_choice1.setChecked(false);
-                    question9_choice2.setChecked(false);
-                    question9_choice3.setChecked(false);
-                    question9_choice4.setChecked(false);
-                    question10_choice1.setChecked(false);
-                    question10_choice2.setChecked(false);
-                    question10_choice3.setChecked(false);
-                    question10_choice4.setChecked(false);
+                    RadioGroup radioGroup9 = findViewById(R.id.radiogroup9);
+                    radioGroup9.clearCheck();
+                    RadioGroup radioGroup10 = findViewById(R.id.radiogroup10);
+                    radioGroup10.clearCheck();
                     final_score=0;
                     Toast.makeText(PhysicsActivity.this, "Options Reset", Toast.LENGTH_SHORT).show();
                 }
